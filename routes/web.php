@@ -1,18 +1,26 @@
 <?php
+declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TopController;
+use App\Http\Controllers\FoodstuffRegisterController;
+use App\Http\Controllers\ResultController;
+use App\Http\Controllers\FoodstuffQuantityGuidelinesController;
+use App\Http\Controllers\DietaryFiberListController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+//Top page
+Route::get('/top',[TopController::class,'top']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Foodstuff-register page
+Route::get('/foodstuff-register',[FoodstuffRegisterController::class,'display']);
+Route::post('/foodstuff-register',[FoodstuffRegisterController::class,'register']);
+
+//Result page
+Route::get('/result',[ResultController::class,'result']);
+Route::post('/result',[ResultController::class,'result']);
+
+//Foodstuff-quantity-guidelines page
+Route::get('/foodstuff-quantity-guidelines',[FoodstuffQuantityGuidelinesController::class,'quantity']);
+
+//Dietary-fiber-list page
+Route::get('/dietary-fiber-list',[DietaryFiberListController::class,'list']);
