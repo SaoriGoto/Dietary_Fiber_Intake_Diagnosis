@@ -16,8 +16,8 @@ Route::get('/foodstuff-register',[FoodstuffRegisterController::class,'display'])
 Route::post('/foodstuff-register',[FoodstuffRegisterController::class,'register']);
 
 //Result page
-Route::get('/result',[ResultController::class,'result']);
-Route::post('/result',[ResultController::class,'result']);
+Route::get('/result',[ResultController::class,'result'])->name('result');
+Route::post('/result', [ResultController::class, 'result'])->name('result_chart');
 
 //Foodstuff-quantity-guidelines page
 Route::get('/foodstuff-quantity-guidelines',[FoodstuffQuantityGuidelinesController::class,'quantity']);
