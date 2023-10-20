@@ -19,8 +19,5 @@ Route::post('/foodstuff-register',[FoodstuffRegisterController::class,'register'
 Route::get('/result',[ResultController::class,'result'])->name('result');
 Route::post('/result', [ResultController::class, 'result'])->name('result_chart');
 
-//Foodstuff-quantity-guidelines page
-Route::get('/foodstuff-quantity-guidelines',[FoodstuffQuantityGuidelinesController::class,'quantity']);
-
 //Dietary-fiber-list page
 Route::get('/dietary-fiber-list',[DietaryFiberListController::class,'list']);
