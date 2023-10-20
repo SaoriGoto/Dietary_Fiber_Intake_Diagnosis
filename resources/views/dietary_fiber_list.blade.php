@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <a href="/foodstuff_register">食材登録画面に戻る</a><br>
+    <a href="/foodstuff-register">食材登録画面に戻る</a><br>
     <hr>
     <a href="/top">トップページに戻る</a>
 @endsection
