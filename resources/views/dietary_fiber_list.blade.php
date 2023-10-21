@@ -45,6 +45,8 @@
         </div>
     </div>
 
+    <p>※「日本食品標準成分表2020年版（八訂）」（文部科学省） （https://www.https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html）を抜粋・加工して作成</p>
+
     <a href="/foodstuff-register">食材登録画面に戻る</a><br>
     <hr>
     <a href="/top">トップページに戻る</a>
