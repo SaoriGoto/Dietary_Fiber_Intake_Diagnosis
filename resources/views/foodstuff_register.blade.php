@@ -15,7 +15,7 @@
             @csrf
             食材名：<input name="foodstuff_name" value="{{old('foodstuff_name')}}" placeholder="全角カタカナで入力" required><br>
             量　　：<input name="quantity" value="{{old('quantity')}}" placeholder="半角数字で入力" required>g<br>
-
+            <button>結果を表示する</button>
             <h2>食材量の目安</h2>
                 <table border="1">
                     <tr>
@@ -52,7 +52,6 @@
                         <td>15g(1個あたり)
                     </tr>
                 </table>
-            <button>結果を表示する</button>
         </form>
     <hr>
     <a href="/top">トップページに戻る</a>
