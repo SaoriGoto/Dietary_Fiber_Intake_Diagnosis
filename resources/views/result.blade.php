@@ -7,6 +7,8 @@
         <canvas id="myChart"></canvas>
         </div>
 
+    <p>※「日本食品標準成分表2020年版（八訂）」（文部科学省） （https://www.https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html）を抜粋・加工して作成</p>
+
     <a href="/dietary-fiber-list">食物繊維が多い食材を見る</a><br>
     <a href="/foodstuff-register">食材登録画面に戻る</a><br>
     <hr>
