@@ -7,13 +7,6 @@
         <canvas id="myChart"></canvas>
         </div>
 
-    <p>※「日本食品標準成分表2020年版（八訂）」（文部科学省） （https://www.https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html）を抜粋・加工して作成</p>
-
-    <a href="/dietary-fiber-list">食物繊維が多い食材を見る</a><br>
-    <a href="/foodstuff-register">食材登録画面に戻る</a><br>
-    <hr>
-    <a href="/top">トップページに戻る</a>
-
     <script>
         var solubleFiber = {{ $solubleFiber }};
         var insolubleFiber = {{ $insolubleFiber }};
@@ -56,4 +49,12 @@
             });
         });
     </script>
+
+<p>※「日本食品標準成分表2020年版（八訂）」（文部科学省） （https://www.https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html）を抜粋・加工してデータベースを作成</p>
+<p>※「日本人の食事摂取基準」（2020年版）（厚生労働省）（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/eiyou/syokuji_kijyun.html）の男女目標摂取量の平均値を基に目標摂取量を作成</p>
+
+<a href="/dietary-fiber-list">食物繊維が多い食材を見る</a><br>
+<a href="/foodstuff-register">食材登録画面に戻る</a><br>
+<hr>
+<a href="/top">トップページに戻る</a>
 @endsection
