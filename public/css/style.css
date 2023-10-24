@@ -16,7 +16,7 @@ header {
     object-fit: cover;
 }
 
-.top-logo-1 {
+.top-logo-1 h1{
     position: absolute;
     top: 40%;
     left: 20%;
@@ -24,6 +24,7 @@ header {
     color: white;
     padding: 10px;
     font-size: 40px;
+    font-weight: lighter;
 }
 
 .top-logo-2 {
@@ -34,4 +35,38 @@ header {
     color: white;
     padding: 10px;
     font-size: 40px;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contents-1 {
+    text-align: center;
+    line-height: 50px;
+}
+
+.main-contents-2 {
+    text-align: center;
+}
+
+.diagnosis-button {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    color: #ffa500;
+    border: 2px solid #ffa500;
+    background: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.diagnosis-button:hover {
+    color: #fff;
+    background: #ffa500;
 }
