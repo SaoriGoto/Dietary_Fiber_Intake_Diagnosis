@@ -4,19 +4,20 @@
     padding: 0;
   }
 
-header {
+/* This top-header is for the top-page only */
+.top-header {
     width: 100%;
     position: relative;
     display: inline-block;
 }
 
-.top-image {
+.top-header-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-.top-logo-1 h1{
+.top-header-logo-1 h1{
     position: absolute;
     top: 40%;
     left: 20%;
@@ -27,7 +28,7 @@ header {
     font-weight: lighter;
 }
 
-.top-logo-2 {
+.top-header-logo-2 {
     position: absolute;
     top: 50%;
     left: 21%;
@@ -37,17 +38,18 @@ header {
     font-size: 40px;
 }
 
-main {
+/* This top-main is for the top-page only */
+.top-main {
     justify-content: center;
     align-items: center;
 }
 
-.main-contents-1 {
+.top-main-contents-1 {
     text-align: center;
     line-height: 50px;
 }
 
-.main-contents-2 {
+.top-main-contents-2 {
     text-align: center;
 }
 
@@ -69,4 +71,86 @@ main {
 .diagnosis-button:hover {
     color: #fff;
     background: #ffa500;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.header-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.header-logo-1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.header-logo-2 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.register-main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.register-main-contents {
+    line-height: 30px;
+    flex: 1;
+    padding: 10px
+}
+
+.result-button {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    color: #ffa500;
+    border: 2px solid #ffa500;
+    background: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.result-button:hover {
+    color: #fff;
+    background: #ffa500;
+}
+
+.foodstuff-quantity-guideline {
+    flex: 1;
+    padding: 10px
 }
