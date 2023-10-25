@@ -2,10 +2,18 @@
 
 {{-- Main contents --}}
 @section('contents')
-    <h1>食物繊維が多い食材</h1>
+
+<header>
+    <img src="{{ asset('images/header.jpg') }}" alt="header" class="header-image">
+    <div class="header-logo-1">食物繊維摂取量診断</div>
+    <div class="header-logo-2">Dietary fiber intake diagnosis</div>
+</header>
+
+<main class="dietary-fiber-list-main">
+    <h2>＜食物繊維が多い食材＞</h2>
     <div style="display: flex; flex-direction: row;">
         <div style="margin-right: 20px;">
-            <h2>水溶性食物繊維が多い食材</h2>
+            <h3>水溶性食物繊維が多い食材</h3>
             <table border="1">
                 <thead>
                     <tr>
@@ -25,7 +33,7 @@
         </div>
 
         <div>
-            <h2>不溶性食物繊維が多い食材</h2>
+            <h3>不溶性食物繊維が多い食材</h3>
             <table border="1">
                 <thead>
                     <tr>
@@ -50,4 +58,9 @@
     <a href="/foodstuff-register">食材登録画面に戻る</a><br>
     <hr>
     <a href="/top">トップページに戻る</a>
+</main>
+
+<footer>
+    <img src="{{ asset('images/footer.jpg') }}" alt="footer" footer class="footer-image">
+</footer>
 @endsection
