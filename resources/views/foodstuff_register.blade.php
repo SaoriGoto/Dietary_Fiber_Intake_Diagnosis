@@ -19,8 +19,8 @@
             </div>
         @endif
 
-        <p>あなたが食べた食材を登録してください。<br>
-            データベースには約140種類の食材データが登録されています。</p>
+        <p>☆あなたが食べた食材を登録してください。<br>
+            ☆データベースには約140種類の食材データが登録されています。</p>
         <form action="/foodstuff-register" method="post">
             @csrf
             食材名：<input name="foodstuff_name" value="{{old('foodstuff_name')}}" placeholder="全角カタカナで入力" required><br>
