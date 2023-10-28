@@ -54,10 +54,9 @@
     padding: 10px 20px;
     font-weight: bold;
     text-decoration: none;
-    text-align: center;
     transition: 0.3s;
     margin-top: 20px;
-}
+    }
 
 .diagnosis-button:hover {
     color: #fff;
