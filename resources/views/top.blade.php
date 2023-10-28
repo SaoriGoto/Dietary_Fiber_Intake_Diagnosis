@@ -4,7 +4,6 @@
 @section('contents')
 
 <header class="top-header">
-    <img src="{{ asset('images/top-header.jpg') }}" alt="top-header" class="top-header-image">
     <div class="top-header-logo-1"><h1>食物繊維摂取量診断</h1></div>
     <div class="top-header-logo-2">Dietary fiber intake diagnosis</div>
 </header>
@@ -19,7 +18,7 @@
             摂取することにより整腸効果、血糖値上昇の抑制、血液中のコレステロール濃度の低下などの効果も期待されます。</p>
 
         <form action="/foodstuff-register" method="get">
-        <button class="diagnosis-button">診断する</button>
+        <a href="/foodstuff-register" class="diagnosis-button">診断する</a>
         </form>
     </div>
 </main>
