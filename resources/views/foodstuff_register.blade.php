@@ -4,7 +4,6 @@
 @section('contents')
 
 <header>
-    <img src="{{ asset('images/header.jpg') }}" alt="header" class="header-image">
     <div class="header-logo-1">食物繊維摂取量診断</div>
     <div class="header-logo-2">Dietary fiber intake diagnosis</div>
 </header>
@@ -70,6 +69,5 @@
     <a href="/top">トップページに戻る</a>
 
 <footer>
-<img src="{{ asset('images/footer.jpg') }}" alt="footer" footer class="footer-image">
 </footer>
 @endsection
