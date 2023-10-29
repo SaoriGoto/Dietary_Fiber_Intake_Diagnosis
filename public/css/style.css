@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
   }
-
+/* top-page */
 /* This top-header is for the top-page only */
 .top-header {
     width: 100%;
@@ -63,6 +63,7 @@
     background: #ffa500;
 }
 
+/* This CSS is common to the Foodstuff Register page, Result page, and Dietary Fiber List page */
 header {
     width: 100%;
     height: 200px;
@@ -99,6 +100,7 @@ footer {
     background-size: cover;
 }
 
+/* Foodstuff-register page */
 .register-main {
     display: flex;
     align-items: flex-start;
@@ -133,4 +135,9 @@ footer {
 .foodstuff-quantity-guideline {
     flex: 1;
     padding: 10px
+}
+
+/* Result page */
+.result-main p {
+    font-size: 12px;
 }
