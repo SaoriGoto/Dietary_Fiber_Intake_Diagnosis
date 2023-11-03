@@ -32,8 +32,7 @@
 
 /* This top-main is for the top-page only */
 .top-main {
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
 .top-main-contents-1 {
@@ -103,14 +102,13 @@ footer {
 
 /* Foodstuff-register page */
 .register-main {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    justify-content:space-evenly;
 }
 
 .register-main-contents {
     line-height: 30px;
-    flex: 1;
-    padding: 10px 180px
 }
 
 .result-button {
@@ -131,11 +129,6 @@ footer {
 .result-button:hover {
     color: #fff;
     background: #ffa500;
-}
-
-.foodstuff-quantity-guideline {
-    flex: 1;
-    padding: 10px
 }
 
 /* Result page */
