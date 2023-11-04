@@ -28,13 +28,13 @@ class FoodstuffRegisterPostRequest extends FormRequest
     public function messages()
     {
         return [
-            'foodstuff_name.required' => '食材名は必須です。',
-            'foodstuff_name.regex' => '食材名は全角カタカナで入力してください。',
-            'foodstuff_name.max' => '食材名は20文字以内で入力してください。',
-            'foodstuff_name.exists' => 'その食材はデータベースにありません。',
-            'quantity.required' => '量は必須です。',
-            'quantity.regex' => '量は半角数字で入力してください。',
-            'quantity.max' => '量は5桁以内で入力してください。',
+            'foodstuff_name.required' => 'ー 食材名は必須です。ー',
+            'foodstuff_name.regex' => 'ー 食材名は全角カタカナで入力してください。ー',
+            'foodstuff_name.max' => 'ー 食材名は20文字以内で入力してください。ー',
+            'foodstuff_name.exists' => 'ー その食材はデータベースにありません。ー',
+            'quantity.required' => 'ー 量は必須です。ー',
+            'quantity.regex' => 'ー 量は半角数字で入力してください。ー',
+            'quantity.max' => 'ー 量は5桁以内で入力してください。ー',
         ];
     }
 }
