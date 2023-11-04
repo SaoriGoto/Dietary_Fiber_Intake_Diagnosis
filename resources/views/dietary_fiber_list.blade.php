@@ -10,9 +10,8 @@
 
 <main class="dietary-fiber-list-main">
     <h2>＜食物繊維が多い食材＞</h2>
-    <div style="display: flex; flex-direction: row;">
-        <div style="margin-right: 20px;">
-            <h3>水溶性食物繊維が多い食材</h3>
+    <div class="dietary-fiber-list-main-contents">
+        <div class="soluble-fiber-list"><h3>水溶性食物繊維が多い食材</h3>
             <table border="1">
                 <thead>
                     <tr>
@@ -31,8 +30,7 @@
             </table>
         </div>
 
-        <div>
-            <h3>不溶性食物繊維が多い食材</h3>
+        <div class="insoluble-fiber-list"><h3>不溶性食物繊維が多い食材</h3>
             <table border="1">
                 <thead>
                     <tr>
@@ -53,12 +51,10 @@
     </div>
 
     <p>※「日本食品標準成分表2020年版（八訂）」（文部科学省） （https://www.https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html）を抜粋・加工して作成</p>
-</main>
-
     <a href="/foodstuff-register">食材登録画面に戻る</a><br>
     <hr>
     <a href="/top">トップページに戻る</a>
-
+</main>
 
 <footer>
 </footer>
