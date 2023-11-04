@@ -103,11 +103,15 @@ footer {
 /* Foodstuff-register page */
 .register-main {
     width: 100%;
+}
+
+.register-main-contents{
+    width: 100%;
     display: flex;
     justify-content:space-evenly;
 }
 
-.register-main-contents {
+.register-form {
     line-height: 30px;
 }
 
@@ -137,6 +141,15 @@ footer {
 }
 
 /* Dietary-fiber-list page */
+.dietary-fiber-list-main {
+    width: 100%;
+}
+
+.dietary-fiber-list-main-contents {
+    display: flex;
+    justify-content:space-evenly;
+}
+
 .dietary-fiber-list-main p {
     font-size: 12px;
 }
