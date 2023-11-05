@@ -68,7 +68,7 @@
     </div>
 
     <hr>
-    <a href="/top">トップページに戻る</a>
+    <a href="/">トップページに戻る</a>
 </main>
 
 <footer>
