@@ -9,7 +9,7 @@ use App\Http\Controllers\FoodstuffQuantityGuidelinesController;
 use App\Http\Controllers\DietaryFiberListController;
 
 //Top page
-Route::get('/top',[TopController::class,'top']);
+Route::get('/',[TopController::class,'top']);
 
 //Foodstuff-register page
 Route::get('/foodstuff-register',[FoodstuffRegisterController::class,'display']);
