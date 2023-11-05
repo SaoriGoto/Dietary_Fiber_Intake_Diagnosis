@@ -62,7 +62,7 @@
     <a href="/dietary-fiber-list">食物繊維が多い食材を見る</a><br>
     <a href="/foodstuff-register">食材登録画面に戻る</a><br>
     <hr>
-    <a href="/top">トップページに戻る</a>
+    <a href="/">トップページに戻る</a>
 </main>
 
 <footer>
