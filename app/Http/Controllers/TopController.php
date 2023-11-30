@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 class TopController extends Controller
 {
-    //Top page display
+    //Topページの表示
     public function top()
     {
         return view('top');

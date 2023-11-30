@@ -8,24 +8,24 @@ use App\Models\DietaryFiberData;
 
 class ResultController extends Controller
 {
-    //calculate and display results
+    //計算した結果データの表示
     public function result(FoodstuffRegisterPostRequest $request)
     {
-        //Retrieve data that has successfully passed validation
+        //バリデーションが成功したデータの取得
         $foodstuff_name = $request->input('foodstuff_name');
         $quantity = $request->input('quantity');
 
-        //Retrieve the necessary data from the database
+        //データベースから必要なデータの取得
         $foodstuffData = DietaryFiberData::where('foodstuff_name', $foodstuff_name)->firstOrFail();
 
-        //Calculate the actual intake based on user input quantity
+        //ユーザーの入力量を基に食物繊維摂取量を計算(データベースのデータは食材100gあたりの食物繊維量の為、データの数値を1gあたりに変換してから計算)
         $solubleFiberPer100g = $foodstuffData->soluble_fiber;
         $insolubleFiberPer100g = $foodstuffData->insoluble_fiber;
 
         $solubleFiber = ($solubleFiberPer100g / 100) * $quantity;
         $insolubleFiber = ($insolubleFiberPer100g / 100) * $quantity;
 
-        //Define the target values
+        //食物繊維目標摂取量の定義(比較表示用)
         $targetValueSoluble = 13;
         $targetValueInsoluble = 6.5;
 

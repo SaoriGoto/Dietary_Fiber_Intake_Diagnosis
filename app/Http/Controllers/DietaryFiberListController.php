@@ -9,7 +9,7 @@ use App\Models\InsolubleFiberList;
 
 class DietaryFiberListController extends Controller
 {
-    //Dietary-fiber-list page display
+    //Dietary-fiber-listページの表示
     public function list()
     {
         $soluble_fiber_list = SolubleFiberList::all();

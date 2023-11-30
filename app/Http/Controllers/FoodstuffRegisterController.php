@@ -9,23 +9,23 @@ use Illuminate\Support\Facades\Redirect;
 
 class FoodstuffRegisterController extends Controller
 {
-    //Foodstuff_register page display
+    //Foodstuff_registerページの表示
     public function display()
     {
         return view('foodstuff_register');
     }
 
 
-    //Register the foodstuff name and quantity
+    //食材名と量の登録
     public function register(FoodstuffRegisterPostRequest $request)
     {
-        //Retrieve validated data
+        //バリデーション済データの取得
         $validated_data = $request->validated();
 
         $foodstuff_name = $validated_data['foodstuff_name'];
         $quantity = $validated_data['quantity'];
 
-        //Pass the data to ResultController when the validation is successful
+        //バリデーションが成功したデータをResultControllerに渡す
         return Redirect::route('result', compact('foodstuff_name', 'quantity'));
 
     }

@@ -8,16 +8,16 @@ use App\Http\Controllers\ResultController;
 use App\Http\Controllers\FoodstuffQuantityGuidelinesController;
 use App\Http\Controllers\DietaryFiberListController;
 
-//Top page
+//Topページ
 Route::get('/',[TopController::class,'top']);
 
-//Foodstuff-register page
+//Foodstuff-registerページ
 Route::get('/foodstuff-register',[FoodstuffRegisterController::class,'display']);
 Route::post('/foodstuff-register',[FoodstuffRegisterController::class,'register']);
 
-//Result page
+//Resultページ
 Route::get('/result',[ResultController::class,'result'])->name('result');
 Route::post('/result', [ResultController::class, 'result'])->name('result_chart');
 
-//Dietary-fiber-list page
+//Dietary-fiber-listページ
 Route::get('/dietary-fiber-list',[DietaryFiberListController::class,'list']);
